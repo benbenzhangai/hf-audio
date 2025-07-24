@@ -1,0 +1,66 @@
+# Ignore model checkpoints and training outputs
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.h5
+*.tflite
+*.pb
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.log
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+*.rar
+*.tmp
+.cache/
+
+# Ignore experiment and results folders
+runs/
+results/
+output/
+outputs/
+logs/
+checkpoints/
+wandb/
+
+# Ignore large/raw audio datasets (but allow small test samples)
+# *.wav
+# !demo-genre-classification/metal-sample-*.wav
+
+# Ignore Python cache and system files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+.env
+
+# Ignore Gradio and Jupyter artifacts
+.gradio/
+.ipynb_checkpoints/
+
+# Allow code, configs, docs, and small test audio
+!*.py
+!*.md
+!*.txt
+!requirements.txt
+!README.md
+!demo-genre-classification/
+!demo-genre-classification/*.py
+!demo-genre-classification/*.md
+!demo-genre-classification/*.txt
+!demo-genre-classification/metal-sample-*.wav
+!demo-genre-classification/requirements.txt
+!demo-genre-classification/demo-app.png

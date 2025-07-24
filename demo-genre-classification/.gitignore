@@ -1,0 +1,62 @@
+# Ignore model checkpoints and training outputs
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.h5
+*.tflite
+*.pb
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.log
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+*.rar
+*.tmp
+*.cache/
+
+# Ignore experiment and results folders
+runs/
+results/
+output/
+outputs/
+logs/
+checkpoints/
+wandb/
+
+# Ignore large/raw audio datasets (but allow small test samples)
+# Uncomment the next line if you want to ignore all wavs except test samples
+# *.wav
+# !metal-sample-*.wav
+
+# Ignore Python cache and system files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+.env
+
+# Ignore Gradio and Jupyter artifacts
+.gradio/
+.ipynb_checkpoints/
+
+# Allow code, configs, docs, and small test audio
+!*.py
+!*.md
+!*.txt
+!metal-sample-*.wav
+!requirements.txt
+!README.md
+!demo-app.png 
